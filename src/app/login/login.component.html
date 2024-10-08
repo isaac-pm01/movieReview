@@ -1,0 +1,29 @@
+<div class="login-container" >
+    <img src="assets/images/film.png" alt="" class="film">
+    <div class="logo">Golden Cinema</div>
+    <div class="desc">
+        Golden Cinema is the world’s most reliable source for quality entertainment recommendations. 
+        As the top online platform for collecting movie and TV show reviews from critics, we offer fans a 
+        complete guide to what's Fresh – and what's Rotten – in theaters and on streaming platforms. 
+        Whether you're a fan seeking recommendations or wanting to share your thoughts, you've found the perfect place.
+    </div>
+
+    <div class="login-form">
+        <div class="form-group">
+            <label for="uname">Username</label>
+            <input type="text" name="uname" class="form-control" [(ngModel)]="username"/>
+        </div>
+        <div class="form-group">
+            <label for="pword">Password</label>
+            <input type="password" name="pword" class="form-control" [(ngModel)]="password"/>
+        </div>
+        <div class="btn-container">
+            <div class="error">{{errorMsg}}</div>
+            <button class="btn btn-dark" (click)="login()">
+                Login
+            </button>
+        </div>
+    </div>
+</div>
+    
+
